@@ -1,0 +1,10 @@
+# ninja log v5
+0	208	1653948033049827869	dsba-itop2022-hw_autogen/timestamp	9ea80fce5c1a6c27
+0	208	1653948033049827869	dsba-itop2022-hw_autogen/mocs_compilation.cpp	9ea80fce5c1a6c27
+0	208	1653948033049827869	/Users/andrewshatalov/dsba-itop2022-hw/cmake-build-debug/dsba-itop2022-hw_autogen/timestamp	9ea80fce5c1a6c27
+0	208	1653948033049827869	/Users/andrewshatalov/dsba-itop2022-hw/cmake-build-debug/dsba-itop2022-hw_autogen/mocs_compilation.cpp	9ea80fce5c1a6c27
+209	1074	1653948033915062027	CMakeFiles/dsba-itop2022-hw.dir/storage.cpp.o	29d0bfdb14144b61
+209	1137	1653948033979333361	CMakeFiles/dsba-itop2022-hw.dir/main.cpp.o	6550f8271509a918
+209	1141	1653948033984257698	CMakeFiles/dsba-itop2022-hw.dir/dsba-itop2022-hw_autogen/mocs_compilation.cpp.o	53f946435ed89be1
+209	1234	1653948034077022716	CMakeFiles/dsba-itop2022-hw.dir/mainwindow.cpp.o	8dbae9c3f4225a74
+1234	1300	1653948034146755953	dsba-itop2022-hw.app/Contents/MacOS/dsba-itop2022-hw	45ad8c223ccafe25

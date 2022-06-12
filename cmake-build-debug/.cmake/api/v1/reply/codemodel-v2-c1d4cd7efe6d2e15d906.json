@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dsba-itop2022-hw",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dsba-itop2022-hw::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsba-itop2022-hw-Debug-0c9a623b00bdf5d6691a.json",
+					"name" : "dsba-itop2022-hw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsba-itop2022-hw_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsba-itop2022-hw_autogen-Debug-f3654443ab7a6d81c5c8.json",
+					"name" : "dsba-itop2022-hw_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsba-itop2022-hw_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsba-itop2022-hw_autogen_timestamp_deps-Debug-f548dde9332ca85db3df.json",
+					"name" : "dsba-itop2022-hw_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/andrewshatalov/dsba-itop2022-hw/cmake-build-debug",
+		"source" : "/Users/andrewshatalov/dsba-itop2022-hw"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

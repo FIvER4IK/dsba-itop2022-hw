@@ -1,0 +1,5 @@
+/Users/andrewshatalov/dsba-itop2022-hw/cmake-build-debug/CMakeFiles/dsba-itop2022-hw.dir
+/Users/andrewshatalov/dsba-itop2022-hw/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/andrewshatalov/dsba-itop2022-hw/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/andrewshatalov/dsba-itop2022-hw/cmake-build-debug/CMakeFiles/dsba-itop2022-hw_autogen_timestamp_deps.dir
+/Users/andrewshatalov/dsba-itop2022-hw/cmake-build-debug/CMakeFiles/dsba-itop2022-hw_autogen.dir
