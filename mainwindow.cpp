@@ -29,12 +29,10 @@ MainWindow::~MainWindow()
 void MainWindow::on_actionOpen_triggered()
 {
     QString fileName = QFileDialog::getOpenFileName(
-        this,         // parent, is needed to restrict focus of the dlg
-        "Open File",  // caption — is shown in the main title of the dlg
-        "",           // start directory
-        "Text files (*.csv)");  // mask which is used for
-                                                 // filtering files by their
-                                                 // extensions
+        this,
+        "Open File",
+        "",
+        "Text files (*.csv)");  // mask which is used for filter by csv
 
     _model->layoutAboutToBeChanged();
     //_model->layoutAboutToBeChanged();
@@ -57,6 +55,8 @@ void MainWindow::on_actionOpen_triggered()
 //}
 
 
+
+////comboboxes for filter by genre
 void MainWindow::on_cbx_1_stateChanged(int arg1)
 {
 //    _proxyModel->setFilterRegularExpression(QRegularExpression("Drama"));
@@ -93,7 +93,7 @@ void MainWindow::on_comboBox_currentTextChanged(const QString &arg1)
     _proxyModel->dateSort(arg1);
 }
 
-
+//textbox for search option
 void MainWindow::on_line_edt_textChanged(const QString &arg1)
 {
    _proxyModel->searchQueryFill(arg1);
@@ -150,6 +150,7 @@ void MainWindow::on_actionSave_triggered()
 }
 
 
+//open a new window with app description and logo
 void MainWindow::on_actionDescriprion_triggered()
 {
     about *wdg = new about;

@@ -34,6 +34,8 @@ void GenreFilterProxyModel::searchQueryFill(const QString& arg1)
 //    setFilterKeyColumn(0);
 }
 
+
+//optional button(becouse there is another logic and we should not push it to find)
 void GenreFilterProxyModel::search()
 {
     QString rx = _searchQuery;
@@ -50,6 +52,7 @@ void GenreFilterProxyModel::search()
 
 void GenreFilterProxyModel::controlStates(int fl)
 {
+    //change the state of flags
     if (fl == 0)
     {
         _dramaFilterEnabled = !_dramaFilterEnabled;
@@ -68,6 +71,7 @@ void GenreFilterProxyModel::controlStates(int fl)
     }
     bool isFirstCbx = true;
     QString rx;
+    //check witch checkbox is enabled and fill regexp
     if (_dramaFilterEnabled)
     {
         if (!isFirstCbx)
@@ -128,7 +132,7 @@ void GenreFilterProxyModel::dateSort(const QString& arg1)
 
 }
 
-int numOfDate(QString m)
+int numOfDate(QString m) //to sort by date
 {
     if (m == "January")
         return 1;
@@ -154,6 +158,7 @@ int numOfDate(QString m)
         return 11;
     if (m == "Desember")
         return 12;
+    return 0;
 }
 
 bool GenreFilterProxyModel::lessThan(const QModelIndex& left, const QModelIndex& right) const
@@ -162,6 +167,7 @@ bool GenreFilterProxyModel::lessThan(const QModelIndex& left, const QModelIndex&
         QVariant rightData = sourceModel()->data(right);
 //        qDebug() << leftData;
 //        qDebug() << rightData;
+        //there is logics of 3 comparations for 3 different columns
         if (_sortState == 0)
         {
             QString lhs = leftData.toString();
@@ -247,7 +253,7 @@ void GenreFilterProxyModel::sliderFilter()
         rx += score;
         rx += '|';
     }
-    rx += "NoNiNrOw";
+    rx += "NoNiNrOw"; // to skip last cell with '|'
     _rxSl = rx;
     setFilterRegularExpression(QRegularExpression(rx));
     setFilterKeyColumn(4);
